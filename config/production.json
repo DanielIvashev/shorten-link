@@ -2,5 +2,5 @@
   "port": 80,
   "mongoUri": "mongodb+srv://daniel:1q2w3e4r@cluster0-bn2w8.azure.mongodb.net/app?retryWrites=true&w=majority",
   "jwtSecret": "daniel1999",
-  "baseUrl": "http://cryptic-meadow-30087.herokuapp.com"
+  "baseUrl": "https://cryptic-meadow-30087.herokuapp.com/"
 }
