@@ -2,5 +2,5 @@
   "port": 5000,
   "mongoUri": "mongodb+srv://daniel:1q2w3e4r@cluster0-bn2w8.azure.mongodb.net/app?retryWrites=true&w=majority",
   "jwtSecret": "daniel1999",
-  "baseUrl": "http://localhost:5000"
+  "baseUrl": "https://shorten-the-link.herokuapp.com"
 }
