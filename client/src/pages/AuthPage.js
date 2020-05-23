@@ -36,7 +36,7 @@ export const AuthPage = () => {
     };
 
     return (
-        <div style={{height: '100vh'}} className='container d-flex justify-content-center align-items-center'>
+        <div style={{height: '100vh'}} className='container d-flex justify-content-center align-items-center pb-5'>
             <div className="card">
                 <div className="card-body">
                     <form>

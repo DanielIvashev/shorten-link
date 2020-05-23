@@ -20,11 +20,10 @@ router.post('/generate', auth, async (req, res) => {
 
         const to = baseUrl + "/t/" + code;
         const link = new Link({
-            code, to, from, owner: req.user.userId
+            code, to, from, owner: req.user.user
         });
 
         await link.save();
-
         res.status(201).json({ link })
     } catch (e) {
         res.status(500).json({message: 'Что-то пошло не так'})
@@ -33,7 +32,7 @@ router.post('/generate', auth, async (req, res) => {
 
 router.get('/', auth, async (req, res) => {
     try {
-        const links = await Link.find({owner: req.user.userId});
+        const links = await Link.find({owner: req.user.user});
         res.json(links)
     } catch (e) {
         res.status(500).json({message: 'Что-то пошло не так'})
